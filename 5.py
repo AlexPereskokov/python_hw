@@ -1,10 +1,17 @@
-print('Your first result:')
-a=int(input())
-print('Your final cause:')
-b=int(input())
-n_day=1
-while a<b:
-    r=a*0.1
-    a+=r
-    n_day+=1
-print('Your will achieve result in:',n_day,'days')
+print('Enter your proceeds:')
+proc=int(input())
+print('Enter your costs:')
+cos=int(input())
+prof=proc-cos
+if prof>0:
+    print('Your positive profit is:',prof)
+    effi=(prof/proc)*100
+    print('Enter the number of employees:')
+    num=int(input())
+    num_prof=prof/num
+    print('Your profitability is:',effi)
+    print('Profit per employee:',num_prof)
+elif prof==0:
+    print('Your profit is:',prof)
+else:
+    print('Your negative profit is:',prof)

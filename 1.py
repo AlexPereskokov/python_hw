@@ -1,3 +1,6 @@
 a=int(input())
 b=str('0'+'a')
+с=float(input())
+print(a)
 print(b)
+print(c)
