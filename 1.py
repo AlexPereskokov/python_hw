@@ -1,0 +1,6 @@
+a=int(input())
+b=str(input())
+c=float(input())
+print(a)
+print(b)
+print(c)
