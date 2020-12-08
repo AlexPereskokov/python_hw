@@ -1,8 +1,6 @@
-def div():
+def div(a1, a2):
     try:
-        arg1 = int(input("Input dividend "))
-        arg2 = int(input("Input divider "))
-        result = arg1 / arg2
+        result = a1 / a2
     except ValueError:
         return 'Value error'
     except ZeroDivisionError:
@@ -10,4 +8,6 @@ def div():
     return result
 
 
-print(f'result is {div()}')
+arg1 = int(input("Input dividend "))
+arg2 = int(input("Input divider "))
+print(f'result is {div(arg1,arg2)}')

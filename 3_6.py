@@ -10,12 +10,8 @@ def ch_lit(w):  # предполагаемая внутренность title()
 
 
 def ch_string():
-    new_list = input('Enter your string ').split()
-    ch_str = ''
-    for w in new_list:
-        ch_str += ch_lit(w) + ' '
-    return ch_str
-    
+    return ' '.join(map(ch_lit,input('Enter your string ').split()))
+
 
 word = input('Enter you word: ')
 print(f'Correct word {ch_title(word)}')

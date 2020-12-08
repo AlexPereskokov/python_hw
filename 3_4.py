@@ -8,12 +8,9 @@ def sqr_fun(a1, a2):
 
 def sqr_fun1(a1, a2):
     try:
-        count = 0
         res = 1
-        while count < abs(a2):
-            res *= a1
-            count += 1
-        res = 1 / res
+        for _ in range(abs(a2)):
+            res /= a1
     except ValueError:
         return 'Value error'
     return res
