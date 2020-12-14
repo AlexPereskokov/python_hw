@@ -1,0 +1,6 @@
+my_f = open("random_file.txt", "w")
+my_f.write(input("Enter your string of num: "))
+my_f.close()
+my_f_r = open("random_file.txt", "r")
+print(sum(map(int, my_f_r.read().split())))
+my_f_r.close()
